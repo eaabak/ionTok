@@ -1,0 +1,23 @@
+.actions {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-icon {
+  color: white;
+  height: 40px;
+  width: 50px;
+}
+
+p {
+  display: block;
+  color: white;
+  margin-top: 0px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}

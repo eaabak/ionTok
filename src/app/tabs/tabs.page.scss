@@ -1,0 +1,20 @@
+
+ion-img {
+  width: 90%;
+  height: 75%;
+  object-fit: cover;
+}
+
+ion-tab-bar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  --color: #afbbce;
+}
+
+ion-label {
+  color: white;
+  font-weight: bold;
+}

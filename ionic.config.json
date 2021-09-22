@@ -1,0 +1,10 @@
+{
+  "name": "ionTok",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

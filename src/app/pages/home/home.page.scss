@@ -1,0 +1,34 @@
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  position: absolute;
+}
+
+ion-title {
+  color: #000;
+
+  ion-text {
+    opacity: 0.2;
+  }
+}
+
+ion-content {
+  ion-title {
+    position: absolute;
+    top: 0;
+  }
+}
+
+ion-slides {
+  height: 100%;
+  z-index: -10;
+
+  ion-slide {
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+

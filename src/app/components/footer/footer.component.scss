@@ -1,0 +1,61 @@
+.footer {
+  position: absolute;
+  right: 0px;
+  bottom: 65px;
+  display: flex;
+
+  ion-img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0%;
+    right: 10px;
+  }
+
+  img {
+    border-radius: 25px;
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+    z-index: 10;
+  }
+}
+
+ng-lottie {
+  width: 110px;
+  height: 100px;
+  position: absolute;
+  bottom: -22%;
+  right: -10px;
+}
+marquee {
+  margin-right: 75px;
+  color: white;
+}
+
+.music-icon {
+  position: absolute;
+  left: -18%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAArtJREFUaAXtmj9oFEEUxu8SoxBUohAlQSNiCv9UJiBWVqawEbuAoIWiYCFYpUolgo2VTRori9Q2tqJNtBNETTBeSiGBdAFjwKy/L9yeG3b2Zv/MzkWZB9/N3cy7977vvd25Y+4ajf/Emv+ijiiKxuB9Cqw2m81v0rCnhUD4JBwvJHCe58IhENsLxNzbE0LaFRbBJOlzvE4Sjombxmv7TLN1zEFWRYsrHJM2VbhM+knnQjIIq9JFKlxUzEBlIRAfJus0mAAirCofBF6tkhBEaOd4D0ZqZr1N/BXwBUyBQbDLKgkh0iPgUkSS8Fdii7iwxM60ydigeD8YnAs5o+AlLElYRGPSHcJFY1btiG37FuFWgmhMujThLIFVhZjiLjL5pE3eOWFTQs3VIaTF9TyflbCu+b66AvuOG4T4rrgtX+iIrUK+10NHfFfcli90xFYh3+uhI74rbssXOmKrkO/10BHfFbflCx2xVcj3euiI74rb8oWO2Crke72OU5TCGjg9PMGb7gIddI8DnV5mnZkdZy1lPRXSPgB/CqtbYH+KXYGJnglBxDF4LoCyx667ZKaEkOAwHnfARaA2j4F+YLKjpsmcc3P4ORGhfB0hCFBrZ8FDMARqM3LpHrjhMsGOEAJrfA2uugzeJdZZ1lxu/VEcbMajCOnb0INDW42FPHAYNE+oTzit53HM6fO2r31zax93ZZEtEKf1v/B5bPPLuf6SeEvqyE+gH2Rc2VqeQCR/jt+zPL5dfHRf/72a6Mo74MpudkmcWiLpJfAKbBcg8AHf66Dz6b/zhIkrZHgDsj4vUgQyJj4yf5lqb2WsZ07DYZRF7WbjwPQVRffUd7BMfI1mI9BtsAXK2mfeqH829N4gchrMgU2Q11o43gcHeqmgc40lSUDqCK/1Dwa12fQVRZ8D+rV2GSzS6t+MwVxU4A+ZcZNXUfQErAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 13px 13px;
+  width: 15px;
+  height: 15px;
+}
+h2 {
+  position: absolute;
+  left: -18%;
+  bottom: 70%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 1em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-title>
+      <ion-text>Following | </ion-text>
+      <strong>For You</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let video of videoList">
+      <video autoplay loop playsinline src="{{video.url}}" [muted]="true"></video>
+      <app-feed [video]="video"></app-feed>
+      <app-footer [video]="video"></app-footer>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
