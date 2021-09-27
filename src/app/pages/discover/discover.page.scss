@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-searchbar {
+  --border-radius: 3px;
+  width: 90%;
+  padding-top: 10px;
+}
+
+.scan {
+  font-size: 25px;
+}
+
+ion-text {
+  margin-right: 10px;
+  color: #fb4954;
+}
+
+.arrow-back {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.first-slides {
+  width: 100%;
+  height: 30%;
+  --bullet-background: black;
+  --bullet-background-active: white;
+  margin-bottom: 15px;
+
+  ion-img {
+    object-fit: cover;
+  }
+}
+
+:host ::ng-deep .swiper-pagination {
+  margin: -8px 2px;
+
+  .swiper-pagination-bullet {
+    --bullet-background: white;
+    width: 4px;
+    height: 4px;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 5px;
+    height: 5px;
+    opacity: 0.9;
+  }
+}
+
+.trend-slides {
+  .trend-slides {
+    img {
+      width: 25%;
+      object-fit: cover;
+    }
+  }
+}
+
+p {
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+ion-col {
+  .count-view {
+    border: 1px solid rgba(239, 234, 234, 0.8);
+    padding: 2px;
+    background: rgba(239, 234, 234, 0.8);
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: normal;
+
+    .icon-view {
+      margin-bottom: -2px;
+    }
+  }
+}
+
+.hashtag {
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 3px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}

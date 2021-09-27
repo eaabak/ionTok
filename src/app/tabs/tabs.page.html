@@ -1,30 +1,31 @@
-<ion-tabs>
+<ion-tabs (ionTabsDidChange)="tabClicked($event)">
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
-      <ion-icon size="large" src="../assets/svg/home.svg"></ion-icon>
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
+    <ion-tab-bar slot="bottom" [ngClass]="isNotHome === true ? 'bg-white' : 'bg-transparent'">
+        <ion-tab-button tab="home">
+            <ion-icon size="large" src="{{isIconChange ? '../assets/svg/home-black.svg' : '../assets/svg/home.svg'}}"></ion-icon>
+            <ion-label>Home</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="discover">
-      <ion-icon size="large" src="../assets/svg/discover.svg"></ion-icon>
-      <ion-label>Discover</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="discover">
+            <ion-icon size="large"
+                      src="{{isIconChange ? '../assets/svg/discover-black.svg' : '../assets/svg/discover.svg'}}"></ion-icon>
+            <ion-label>Discover</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="add-video">
-      <ion-img src="../assets/svg/addvideo.svg"></ion-img>
-    </ion-tab-button>
+        <ion-tab-button tab="add-video">
+            <ion-img src="{{isIconChange ? '../assets/svg/addvideoblack.svg' : '../assets/svg/addvideo.svg'}}"></ion-img>
+        </ion-tab-button>
 
-    <ion-tab-button tab="inbox">
-      <ion-icon size="large" src="../assets/svg/message.svg"></ion-icon>
-      <ion-label>Inbox</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="inbox">
+            <ion-icon size="large" src="{{isIconChange ? '../assets/svg/message-black.svg' : '../assets/svg/message.svg'}}"></ion-icon>
+            <ion-label>Inbox</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="profile">
-      <ion-icon size="large" src="../assets/svg/user.svg"></ion-icon>
-      <ion-label>Profile</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+        <ion-tab-button tab="profile">
+            <ion-icon size="large" src="{{isIconChange ? '../assets/svg/user-black.svg' : '../assets/svg/user.svg'}}"></ion-icon>
+            <ion-label>Profile</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
 
 
 </ion-tabs>

@@ -11,12 +11,6 @@ export class HomePage implements OnInit {
   };
   videoList = [
     {
-      userName: 'userName1',
-      likes: '1.8k',
-      comments: '190',
-      url: 'https://firebasestorage.googleapis.com/v0/b/testvideo-91d3a.appspot.com/o/4.mp4?alt=media&token=517ad60c-ca28-400e-ab46-49fb8c122d75',
-      userPic: 'https://firebasestorage.googleapis.com/v0/b/testvideo-91d3a.appspot.com/o/profile_pics%2Fprofile1.jpg?alt=media&token=567ea332-04e8-4c64-afb0-8152c6f12fec',
-    }, {
       userName: 'userName2',
       likes: '344',
       comments: '40',
@@ -48,7 +42,7 @@ export class HomePage implements OnInit {
       userName: 'userName6',
       likes: '10.8k',
       comments: '4390',
-      url: 'https://v16m.tiktokcdn.com/4cd1c6ee4ae7f6014d7b2a0f75d7d9a2/614bd33c/video/tos/alisg/tos-alisg-pve-0037c001/e6c1df464fa5477b8cc998dc4bc2153c/?a=1233&br=2602&bt=1301&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=98CcoejL4kag3&l=2021092219065801019018515213208F9D&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=amkzZjY6ZjdyNzMzODczNEApMzk1ZDlpaDw0NzQ8OThpPGc0NW40cjRfYHFgLS1kMS1zczUwMDRgYjIxYWMwLS1gYDU6Yw%3D%3D&vl=&vr=',
+      url: 'https://firebasestorage.googleapis.com/v0/b/testvideo-91d3a.appspot.com/o/8.mp4?alt=media&token=87e20ffd-2b5c-422a-ad85-33b90b4e2169',
       userPic: 'https://firebasestorage.googleapis.com/v0/b/testvideo-91d3a.appspot.com/o/profile_pics%2Fprofile6.jpeg?alt=media&token=e747af9e-4775-484e-9a27-94b2426f319c',
     },
     {
