@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inbox</ion-title>
-  </ion-toolbar>
+<ion-header mode="ios" class="ion-no-border">
+    <ion-toolbar color="ligth">
+        <ion-title>All activity
+            <ion-icon name="caret-down" style="margin-bottom: -3px;"></ion-icon>
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon color="dark" name="paper-plane-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+    <div class="ion-padding-vertical">
+        <div class="activity">
+            <ion-icon src="../assets/svg/activity.svg"></ion-icon>
+            <h4>All activity</h4>
+            <p>Notifications about your account will appear here</p>
+        </div>
+    </div>
 
 </ion-content>

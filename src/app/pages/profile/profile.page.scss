@@ -1,0 +1,51 @@
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.username {
+  margin-top: 5px;
+
+  ion-text {
+    font-weight: bolder;
+  }
+}
+
+ion-grid {
+  margin-top: 5px;
+
+  small {
+    color: #00000096;
+  }
+}
+
+.btn-edit {
+  margin-top: 10px;
+
+  a {
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 25px 10px 25px;
+  }
+
+  .bookmark {
+    margin-left: 4px;
+
+    .icon-mark {
+      font-size: 20px;
+      margin-bottom: -5px;
+    }
+  }
+}
+
+.segment {
+  margin-top: 15px;
+}
+

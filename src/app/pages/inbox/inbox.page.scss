@@ -1,0 +1,34 @@
+ion-content {
+  .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    ion-icon {
+      font-size: 72px;
+    }
+  }
+
+  h4 {
+    margin-top: 20px;
+    font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(22, 24, 35);
+    line-height: 20px;
+  }
+
+  p {
+    font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+    font-weight: 400;
+    margin: 12px 0px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(22, 24, 35, 0.75);
+    text-align: center;
+  }
+}

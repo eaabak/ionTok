@@ -12,14 +12,8 @@
 
 <ion-content [fullscreen]="true">
     <ion-slides [options]="options" pager="true" class="first-slides">
-        <ion-slide>
-            <ion-img src="./assets/svg/res.jpg"></ion-img>
-        </ion-slide>
-        <ion-slide>
-            <ion-img src="./assets/svg/res.jpg"></ion-img>
-        </ion-slide>
-        <ion-slide>
-            <ion-img src="./assets/svg/res.jpg"></ion-img>
+        <ion-slide *ngFor="let slide of slides">
+            <ion-img src="{{slide.photo}}"></ion-img>
         </ion-slide>
     </ion-slides>
     <div *ngFor="let trend of trends" class="ion-padding">

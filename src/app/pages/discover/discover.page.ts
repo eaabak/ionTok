@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {DataService} from "../../services/data.service";
 
 @Component({
     selector: 'app-discover',
@@ -14,68 +15,18 @@ export class DiscoverPage implements OnInit {
     optionsTrends = {
         slidesPerView: 5,
         spaceBetween: 1,
-        freeMode:true
+        freeMode: true
     }
-    trends = [{
-        trendName: 'benimlehazirlan',
-        viewCounts: '117.0M',
-        trendProfiles: [{
-            id: 0,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 1,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 2,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 3,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 4,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 5,
-            photo: './assets/svg/res.jpg'
-        }, {
-            id: 6,
-            photo: './assets/svg/res.jpg'
-        }]
-    },
-        {
-            trendName: 'okuladönüş',
-            viewCounts: '340.0B',
-            trendProfiles: [{
-                id: 0,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 1,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 2,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 3,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 4,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 5,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 6,
-                photo: './assets/svg/res.jpg'
-            }, {
-                id: 7,
-                photo: './assets/svg/res.jpg'
-            }]
-        }]
 
-    constructor() {
+    trends: any = [];
+    slides: any = [];
+
+    constructor(private data: DataService) {
     }
 
     ngOnInit() {
+        this.slides = this.data.getSlides();
+        this.trends = this.data.getTrends();
     }
 
     onFocus(event: any) {

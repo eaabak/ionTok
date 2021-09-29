@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'discover',
     loadChildren: () => import('./pages/discover/discover.module').then(m => m.DiscoverPageModule)
+  },
+  {
+    path: 'settings-and-privacy',
+    loadChildren: () => import('./pages/settings-and-privacy/settings-and-privacy.module').then(m => m.SettingsAndPrivacyPageModule)
   }
 ];
 @NgModule({

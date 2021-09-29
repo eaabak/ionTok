@@ -1,9 +1,74 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
+<ion-header mode="ios">
+    <ion-toolbar color="ligth">
+        <ion-title>@cloneapplcaitons
+            <ion-icon name="caret-down" style="margin-bottom: -3px;"></ion-icon>
+        </ion-title>
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-icon color="dark" name="person-add-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button routerLink="/settings-and-privacy">
+                <ion-icon color="dark" name="menu"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div class="ion-padding-vertical">
+        <ion-avatar class="avatar">
+            <img src="https://avatars.githubusercontent.com/u/9548700?v=4" alt="" class="image-round">
+        </ion-avatar>
+        <div class="ion-text-center username">
+            <ion-text>@cloneapplcaitons</ion-text>
+        </div>
+        <ion-grid fixed>
+            <ion-row class="ion-no-padding">
+                <ion-col size="4">
+                    <div class="ion-text-center">
+                        <span><strong>0</strong></span> <br>
+                        <small>Following</small>
+                    </div>
+                </ion-col>
+                <ion-col size="4">
+                    <div class="ion-text-center">
+                        <span><strong>0</strong></span> <br>
+                        <small>Followers</small>
+                    </div>
+                </ion-col>
+                <ion-col size="4">
+                    <div class="ion-text-center">
+                        <span><strong>0</strong></span> <br>
+                        <small>Like</small>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <div class="ion-text-center btn-edit">
+            <a>Edit profile</a>
+            <a class="bookmark">
+                <ion-icon class="icon-mark" name="bookmark-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <div class="ion-text-center ion-margin-top">
+        <span>Tap to add bio</span>
+    </div>
 
+    <div class="segment">
+        <ion-segment color="dark" value="call" mode="md">
+            <ion-segment-button value="call">
+                <ion-icon src="./assets/svg/tokmenu.svg"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button value="heart">
+                <ion-icon src="../assets/svg/yourVideo.svg"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button value="map">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
 </ion-content>
